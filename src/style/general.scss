@@ -1,0 +1,94 @@
+@use './partials/colors.scss' as*;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+ol,
+menu {
+    list-style-type: none;
+}
+
+// CONTAINERS 
+
+.container1 {
+    width: 1146px;
+    margin: 0 auto;
+}
+
+.container2 {
+    width: 930px;
+    margin: 0 auto;
+}
+
+// TITLES and TEXTS
+
+.h1 {
+    font-size: 88px;
+    color: $shark;
+}
+
+.h2-white {
+    font-size: 65px;
+    color: white;
+}
+
+.h2-black {
+    font-size: 65px;
+    color: $shark;
+}
+
+.h3 {
+    font-size: 26px;
+    color: $shark;
+}
+
+p {
+    font-size: 18px;
+    color: $corduroy;
+}
+
+.section-text {
+    font-size: 12px;
+    color: $elf-green;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+}
+
+// BADGES & BUTTONS 
+
+.my-btn {
+    font-size: 13px;
+    height: 45px;
+    padding: 16px 26px;
+}
+
+.my-btn.dark {
+    color: white;
+    background-color: $elf-green;
+}
+
+.my-btn.light {
+    color: $elf-green;
+}
+
+// FA ICONS
+
+.fa-solid,
+.fa-regular {
+    font-family: 'Font Awesome 6 Free';
+}
+
+// UTILITY CLASSES 
+
+.flex-y-center {
+    display: flex;
+    align-items: center;
+}
