@@ -73,8 +73,12 @@ export default {
             text-transform: uppercase;
             font-size: 14px;
 
-            &:hover {
-                color: $elf-green;
+            .nav-link {
+                transition: color 300ms;
+
+                &:hover {
+                    color: $elf-green;
+                }
             }
         }
 

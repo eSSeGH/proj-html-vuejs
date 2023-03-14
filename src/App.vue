@@ -1,11 +1,15 @@
 <script>
 import AppHeader1 from './components/AppHeader1.vue';
 import AppHeader2 from './components/AppHeader2.vue';
+import AppHero from './components/AppHero.vue';
+
+import '@fontsource/poppins';
 
 export default {
   components: {
     AppHeader1,
     AppHeader2,
+    AppHero,
   },
   data() {
     return {
@@ -18,6 +22,7 @@ export default {
 <template>
   <AppHeader1 />
   <AppHeader2 class="header2" />
+  <AppHero class="hero" />
 </template>
 
 <style lang="scss" scoped>
@@ -27,5 +32,9 @@ export default {
   position: sticky;
   top: 0;
   left: 0;
+}
+
+.hero {
+  margin-top: -84px;
 }
 </style>

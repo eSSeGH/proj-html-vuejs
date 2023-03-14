@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
+    font-weight: 700;
 }
 
 img {
@@ -31,17 +33,18 @@ menu {
 // TITLES and TEXTS
 
 .h1 {
-    font-size: 88px;
+    font-size: 72px;
     color: $shark;
+    font-weight: 900;
 }
 
 .h2-white {
-    font-size: 65px;
+    font-size: 52px;
     color: white;
 }
 
 .h2-black {
-    font-size: 65px;
+    font-size: 52px;
     color: $shark;
 }
 
@@ -55,19 +58,18 @@ p {
     color: $corduroy;
 }
 
-.section-text {
-    font-size: 12px;
+.section-name {
+    font-size: 18px;
     color: $elf-green;
-    margin-bottom: 27px;
     text-transform: uppercase;
 }
 
 // BADGES & BUTTONS 
 
 .my-btn {
-    font-size: 13px;
+    font-size: 14px;
     height: 45px;
-    padding: 15px 26px;
+    padding: 14px 26px;
     text-transform: uppercase;
     border-radius: 3px;
 }
