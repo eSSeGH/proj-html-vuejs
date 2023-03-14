@@ -43,7 +43,8 @@ export default {
 }
 
 .hl-title.dark {
-    background-color: rgba($color: $elf-green, $alpha: 0.5);
+    background-color: $elf-green-light;
+    color: $elf-green;
 }
 
 .hl-title.light {
