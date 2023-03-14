@@ -15,7 +15,14 @@ import {
     faEnvelope,
     faAward,
     faLock,
-    faGraduationCap
+    faGraduationCap,
+    faArrowRight,
+    faDiagramProject,
+    faBriefcase,
+    faChartSimple,
+    faPlane,
+    faEarthAmericas,
+    faInbox
 } from '@fortawesome/free-solid-svg-icons'
 import { faPenToSquare } from '@fortawesome/free-regular-svg-icons'
 import { faFacebook, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
@@ -30,7 +37,14 @@ library.add(faClock,
     faAward,
     faLock,
     faPenToSquare,
-    faGraduationCap)
+    faGraduationCap,
+    faArrowRight,
+    faDiagramProject,
+    faBriefcase,
+    faChartSimple,
+    faPlane,
+    faEarthAmericas,
+    faInbox)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)
