@@ -38,24 +38,14 @@ menu {
     font-weight: 900;
 }
 
-.h2-white {
-    font-size: 52px;
-    color: white;
-}
-
-.h2-black {
-    font-size: 52px;
-    color: $shark;
-}
-
 .h3 {
     font-size: 26px;
-    color: $shark;
+    margin-bottom: 30px;
 }
 
 p {
-    font-size: 18px;
-    color: $corduroy;
+    font-size: 16px;
+    font-weight: 100;
 }
 
 .section-name {
@@ -97,4 +87,20 @@ p {
 .flex-y-center {
     display: flex;
     align-items: center;
+}
+
+// LAYOUT
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.col6 {
+    flex-basis: calc(50% - 16px/2);
+}
+
+.col4 {
+    flex-basis: calc(100%/3 - 32px/3);
 }

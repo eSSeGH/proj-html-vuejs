@@ -2,6 +2,7 @@
 import AppHeader1 from './components/AppHeader1.vue';
 import AppHeader2 from './components/AppHeader2.vue';
 import AppHero from './components/AppHero.vue';
+import AppNetwork from './components/AppNetwork.vue';
 
 import '@fontsource/poppins';
 
@@ -10,6 +11,7 @@ export default {
     AppHeader1,
     AppHeader2,
     AppHero,
+    AppNetwork,
   },
   data() {
     return {
@@ -23,6 +25,7 @@ export default {
   <AppHeader1 />
   <AppHeader2 class="header2" />
   <AppHero class="hero" />
+  <AppNetwork />
 </template>
 
 <style lang="scss" scoped>

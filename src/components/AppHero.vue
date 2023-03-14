@@ -61,20 +61,6 @@ export default {
     .hero-body {
         margin-left: 50%;
         padding: 242px 0 0 55px;
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-
-            .col6 {
-                flex-basis: calc(50% - 16px/2);
-            }
-
-            .col4 {
-                flex-basis: calc(100%/3 - 32px/3);
-            }
-        }
     }
 
 }
