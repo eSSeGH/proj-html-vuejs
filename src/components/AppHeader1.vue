@@ -55,9 +55,10 @@ export default {
 
         .header1-info {
             gap: 7px;
+            transition: color 300ms;
 
             &:hover {
-                color: white;
+                color: $elf-green;
             }
         }
 
