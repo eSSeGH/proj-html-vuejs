@@ -63,6 +63,7 @@ export default {
     height: 84px;
     font-size: 14px;
     font-family: sans-serif;
+    z-index: 100;
 
     .container1 {
         gap: 35px;
