@@ -2,6 +2,9 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 
+import "@fontsource/poppins/"
+import "@fontsource/poppins/900.css"
+
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -22,16 +25,17 @@ import {
     faChartSimple,
     faPlane,
     faEarthAmericas,
-    faInbox
+    faInbox,
+    faQuoteRight
 } from '@fortawesome/free-solid-svg-icons'
 import { faPenToSquare } from '@fortawesome/free-regular-svg-icons'
-import { faFacebook, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
 library.add(faClock,
     faPhone,
     faEnvelope,
-    faFacebook,
+    faFacebookF,
     faTwitter,
     faLinkedinIn,
     faAward,
@@ -44,7 +48,8 @@ library.add(faClock,
     faChartSimple,
     faPlane,
     faEarthAmericas,
-    faInbox)
+    faInbox,
+    faQuoteRight)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

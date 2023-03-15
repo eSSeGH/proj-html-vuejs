@@ -1,4 +1,6 @@
 <script>
+import "@fontsource/poppins";
+import "@fontsource/poppins/700.css";
 
 export default {
     props: {
@@ -16,17 +18,21 @@ export default {
 <template>
     <div class="section-name">{{ sectionHeader.name }}</div>
 
-    <h2 class="h2" :class="sectionHeader.class">
-        <span v-if="sectionHeader.hlTitleStart" class="hl-title" :class="sectionHeader.class">{{ sectionHeader.hlTitleStart
-        }}</span>
+    <h2 class="h2" :class="sectionHeader.darkMode === true ? 'dark' : 'light'">
+        <span v-if="sectionHeader.hlTitleStart" class="hl-title"
+            :class="sectionHeader.darkMode === true ? 'dark' : 'light'">{{
+                sectionHeader.hlTitleStart
+            }}</span>
 
         {{ sectionHeader.title }}
 
-        <span v-if="sectionHeader.hlTitleEnd" class="hl-title" :class="sectionHeader.class">{{ sectionHeader.hlTitleEnd
-        }}</span>
+        <span v-if="sectionHeader.hlTitleEnd" class="hl-title"
+            :class="sectionHeader.darkMode === true ? 'dark' : 'light'">{{
+                sectionHeader.hlTitleEnd
+            }}</span>
     </h2>
 
-    <p :class="sectionHeader.class">{{ sectionHeader.paragraph }}</p>
+    <p :class="sectionHeader.darkMode === true ? 'dark' : 'light'">{{ sectionHeader.paragraph }}</p>
 </template>
 
 <style lang="scss" scoped>

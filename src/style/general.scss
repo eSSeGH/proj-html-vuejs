@@ -1,11 +1,12 @@
 @use './partials/colors.scss' as*;
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
-    font-weight: 700;
+    font-weight: 900;
 }
 
 img {
@@ -94,7 +95,6 @@ p {
 .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
 }
 
 .col12 {
@@ -102,13 +102,17 @@ p {
 }
 
 .col10 {
-    flex-basis: calc(100%/12*10);
+    flex-basis: calc(100%/6*5);
+}
+
+.col8 {
+    flex-basis: calc(100%/3*2);
 }
 
 .col6 {
-    flex-basis: calc(50% - 16px/2);
+    flex-basis: 50%;
 }
 
 .col4 {
-    flex-basis: calc(100%/3 - 32px/3);
+    flex-basis: calc(100%/3);
 }

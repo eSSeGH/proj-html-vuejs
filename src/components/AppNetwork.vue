@@ -30,7 +30,7 @@ export default {
                 }
             ],
             sectionHeader: {
-                class: 'light',
+                darkMode: false,
                 name: 'about the network',
                 hlTitleStart: 'The',
                 title: 'Company',

@@ -5,6 +5,7 @@ import AppHero from './components/AppHero.vue';
 import AppNetwork from './components/AppNetwork.vue';
 import AppBusiness from './components/AppBusiness.vue';
 import AppProcess from './components/AppProcess.vue';
+import AppTeam from './components/AppTeam.vue';
 
 import '@fontsource/poppins';
 
@@ -16,6 +17,7 @@ export default {
     AppNetwork,
     AppBusiness,
     AppProcess,
+    AppTeam,
   },
   data() {
     return {
@@ -32,6 +34,7 @@ export default {
   <AppNetwork />
   <AppBusiness />
   <AppProcess />
+  <AppTeam />
 </template>
 
 <style lang="scss" scoped>

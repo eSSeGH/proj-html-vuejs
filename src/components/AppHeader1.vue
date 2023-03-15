@@ -29,7 +29,7 @@ export default {
                 <span class="header1-link">hello@example.com</span>
             </div>
 
-            <font-awesome-icon class="header1-info" icon="fa-brands fa-facebook" />
+            <font-awesome-icon class="header1-info" icon="fa-brands fa-facebook-f" />
             <font-awesome-icon class="header1-info" icon="fa-brands fa-twitter" />
             <font-awesome-icon class="header1-info" icon="fa-brands fa-linkedin-in" />
 

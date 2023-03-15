@@ -37,8 +37,8 @@ export default {
                 },
             ],
             sectionHeader: {
-                class: 'dark',
-                name: 'howw it works in practice',
+                darkMode: true,
+                name: 'how it works in practice',
                 hlTitleStart: 'Process',
                 title: 'Management',
                 paragraph: 'We work with innovative methodologies to ensure that the entire reformatiing process is done from start to finish as planned. '

@@ -42,7 +42,7 @@ export default {
                 }
             ],
             sectionHeader: {
-                class: 'dark',
+                darkMode: true,
                 name: 'our business areas',
                 hlTitleEnd: 'Services',
                 title: 'Excellence in',
