@@ -29,7 +29,9 @@ import {
     faPlane,
     faEarthAmericas,
     faInbox,
-    faQuoteRight
+    faQuoteRight,
+    faLocationDot,
+    faAngleRight
 } from '@fortawesome/free-solid-svg-icons'
 import { faPenToSquare } from '@fortawesome/free-regular-svg-icons'
 import { faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
@@ -52,7 +54,9 @@ library.add(faClock,
     faPlane,
     faEarthAmericas,
     faInbox,
-    faQuoteRight)
+    faQuoteRight,
+    faLocationDot,
+    faAngleRight)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

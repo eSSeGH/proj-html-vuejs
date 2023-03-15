@@ -8,6 +8,7 @@ import AppProcess from './components/AppProcess.vue';
 import AppTeam from './components/AppTeam.vue';
 import AppNews from './components/AppNews.vue';
 import AppNewsLetter from './components/AppNewsLetter.vue';
+import AppFooter from './components/AppFooter.vue';
 
 import '@fontsource/poppins';
 
@@ -22,6 +23,7 @@ export default {
     AppTeam,
     AppNews,
     AppNewsLetter,
+    AppFooter,
   },
   data() {
     return {
@@ -41,6 +43,7 @@ export default {
   <AppTeam />
   <AppNews />
   <AppNewsLetter />
+  <AppFooter />
 </template>
 
 <style lang="scss" scoped>

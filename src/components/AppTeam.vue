@@ -192,6 +192,7 @@ export default {
             .speech-card {
                 background-color: $elf-green;
                 padding: 30px;
+                border-radius: 20px;
                 display: flex;
                 flex-direction: column;
 

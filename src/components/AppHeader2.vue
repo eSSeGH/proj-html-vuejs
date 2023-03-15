@@ -1,15 +1,28 @@
 <script>
 import Button from './Button.vue';
+import Logo from './Logo.vue';
 
 export default {
     components: {
         Button,
+        Logo,
     },
     data() {
         return {
             string: 'get in touch',
         }
-    }
+    },
+    methods: {
+        handleScroll(event) {
+            const headerEl = document.querySelector('.header2')
+            headerEl.style.transition = 'background-color 1s'
+            headerEl.style.backgroundColor = 'white'
+            headerEl.style.boxShadow = '0 10px 15px -15px lightgrey'
+        },
+    },
+    created() {
+        window.addEventListener('scroll', this.handleScroll)
+    },
 }
 </script>
 
@@ -20,12 +33,7 @@ export default {
 
             <div class="header2-logo flex-y-center">
                 <h1 class="header2-logo">
-                    <span class="hl-logo-text">
-                        <strong>NEX</strong>
-                    </span>
-                    <span class="nhl-logo-text">
-                        <strong>GEN</strong>
-                    </span>
+                    <Logo />
                 </h1>
             </div>
 
