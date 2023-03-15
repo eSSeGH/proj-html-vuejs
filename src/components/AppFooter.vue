@@ -152,6 +152,11 @@ footer .footer {
             }
 
             .footer-link {
+                transition: color 300ms;
+
+                &:hover {
+                    color: $elf-green;
+                }
 
                 a {
                     margin-left: 7px;
@@ -165,8 +170,19 @@ footer .footer {
             padding: 48px 44px;
             background-color: $footer-card;
             border-radius: 20px;
+            transition: all 400ms;
+
+            &:hover {
+                margin-top: -15px;
+                margin-bottom: 15px;
+            }
 
             .footer-link {
+                transition: color 300ms;
+
+                &:hover {
+                    color: $elf-green;
+                }
 
                 a {
                     margin-left: 7px;

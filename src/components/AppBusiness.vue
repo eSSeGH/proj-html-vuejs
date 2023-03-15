@@ -40,7 +40,9 @@ export default {
 
                     <div class="icons col12">
                         <font-awesome-icon class="icon" :icon="infoCard.icon" />
-                        <font-awesome-icon class="arrow-icon" icon="fa-solid fa-arrow-right" />
+                        <div class="arrow-trans">
+                            <font-awesome-icon class="arrow-icon" icon="fa-solid fa-arrow-right" />
+                        </div>
                     </div>
 
                     <h3 class="h3">{{ infoCard.title }}</h3>
@@ -70,6 +72,12 @@ export default {
             padding: 42px;
             background-color: white;
             border-radius: 10px;
+            transition: margin 400ms;
+
+            &:hover {
+                margin-top: -15px;
+                margin-bottom: 15px;
+            }
 
             .icons {
                 display: flex;
@@ -80,10 +88,14 @@ export default {
                     font-size: 45px;
                 }
 
-                .arrow-icon {
-                    font-size: 22px;
-                    color: rgba($color: $elf-green, $alpha: 0.5);
-                    align-self: flex-start;
+                .arrow-trans {
+
+                    .arrow-icon {
+                        font-size: 22px;
+                        color: rgba($color: $elf-green, $alpha: 0.5);
+                        align-self: flex-start;
+
+                    }
                 }
             }
 

@@ -32,6 +32,11 @@ export default {
     color: white;
     background-color: $elf-green;
     border: none;
+    transition: background-color 400ms;
+
+    &:hover {
+        background-color: #28afaf;
+    }
 }
 
 .my-btn.light {
@@ -43,6 +48,12 @@ export default {
     font-weight: 500;
     border: 1px solid $elf-green;
     color: $elf-green;
+    transition: all 400ms;
+
+    &:hover {
+        background-color: $elf-green;
+        color: white;
+    }
 }
 </style>
  
