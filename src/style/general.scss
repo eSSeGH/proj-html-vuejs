@@ -55,27 +55,6 @@ p {
     text-transform: uppercase;
 }
 
-// BADGES & BUTTONS 
-
-.my-btn {
-    font-size: 14px;
-    height: 45px;
-    padding: 14px 26px;
-    text-transform: uppercase;
-    border-radius: 3px;
-}
-
-.my-btn.dark {
-    color: white;
-    background-color: $elf-green;
-    border: none;
-}
-
-.my-btn.light {
-    border: 1px solid $elf-green;
-    color: $elf-green;
-}
-
 // FA ICONS
 
 .fa-solid,

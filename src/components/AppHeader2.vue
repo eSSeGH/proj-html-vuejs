@@ -40,7 +40,7 @@ export default {
                 </ul>
             </nav>
 
-            <Button class="dark" :string="string"></Button>
+            <Button class="my-btn dark" :string="string"></Button>
 
         </div>
 

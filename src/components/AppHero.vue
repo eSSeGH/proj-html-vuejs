@@ -40,8 +40,8 @@ export default {
                     <TextForm class="col6" :placeholder="phone" />
                     <TextForm class="col6" :placeholder="more" />
 
-                    <Button class="dark col4" :string="'get in touch'"></Button>
-                    <Button class="light col4" :string="'read more'"></Button>
+                    <Button class="my-btn dark col4" :string="'get in touch'"></Button>
+                    <Button class="my-btn light col4" :string="'read more'"></Button>
                 </div>
 
             </div>
@@ -61,6 +61,14 @@ export default {
     .hero-body {
         margin-left: 50%;
         padding: 242px 0 0 55px;
+
+        .row {
+            gap: 30px;
+
+            .col6 {
+                flex-basis: calc(50% - 30px/2);
+            }
+        }
     }
 
 }
