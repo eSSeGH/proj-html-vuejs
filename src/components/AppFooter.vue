@@ -149,6 +149,11 @@ footer .footer {
             .my-btn.light {
                 align-self: flex-start;
                 background-color: rgba($color: white, $alpha: 0);
+                transition: all 400ms;
+
+                &:hover {
+                    background-color: $elf-green;
+                }
             }
 
             .footer-link {

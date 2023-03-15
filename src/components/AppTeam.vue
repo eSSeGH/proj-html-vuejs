@@ -173,6 +173,15 @@ export default {
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            transition: all 400ms;
+
+                            &:hover {
+                                background-color: #28afaf;
+                            }
+
+                            &:hover .social-icon {
+                                color: white;
+                            }
 
                             .social-icon {
                                 color: $elf-green;

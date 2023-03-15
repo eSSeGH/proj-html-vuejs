@@ -64,7 +64,7 @@ export default {
             <div v-for="(infoCard, i) in processInfos" class="col1-5 card">
 
                 <div class="number">
-                    <span>{{ infoCard.number }}</span>
+                    <span class="number-text">{{ infoCard.number }}</span>
                 </div>
 
                 <h3 class="h3">{{ infoCard.title }}</h3>
@@ -108,15 +108,27 @@ export default {
             flex-direction: column;
             align-items: center;
 
+            &:hover .number {
+                background-color: $elf-green;
+            }
+
+            &:hover .number-text {
+                color: white;
+            }
+
             .number {
                 background-color: $elf-green-light;
                 height: 46px;
                 aspect-ratio: 1;
                 border-radius: 50%;
                 line-height: 46px;
+                transition: all 400ms;
 
                 span {
                     color: $elf-green;
+                    font-weight: 700;
+                    font-size: 18px;
+                    transition: all 400ms;
                 }
             }
 
