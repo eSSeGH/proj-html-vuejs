@@ -1,9 +1,10 @@
 <script>
+import store from '../store';
 
 export default {
     data() {
         return {
-
+            store,
         }
     }
 }
@@ -21,12 +22,12 @@ export default {
 
             <div class="header1-info flex-y-center">
                 <font-awesome-icon icon="fa-solid fa-phone" />
-                <span class="header1-link">+1 (305) 1234-5678</span>
+                <span class="header1-link">{{ store.telephone }}</span>
             </div>
 
             <div class="header1-info flex-y-center">
                 <font-awesome-icon icon="fa-solid fa-envelope" />
-                <span class="header1-link">hello@example.com</span>
+                <span class="header1-link">{{ store.email }}</span>
             </div>
 
             <font-awesome-icon class="header1-info" icon="fa-brands fa-facebook-f" />

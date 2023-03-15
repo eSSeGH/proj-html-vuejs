@@ -1,6 +1,7 @@
 <script>
 import SectionHeader from './SectionHeader.vue';
 import Button from './Button.vue';
+import store from '../store';
 
 export default {
     components: {
@@ -9,38 +10,7 @@ export default {
     },
     data() {
         return {
-            businessInfos: [
-                {
-                    icon: 'fa-solid fa-diagram-project',
-                    title: 'Audit & Assurance',
-                    lorem: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-                },
-                {
-                    icon: 'fa-solid fa-briefcase',
-                    title: 'Financial Advisory',
-                    lorem: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-                },
-                {
-                    icon: 'fa-solid fa-chart-simple',
-                    title: 'Analytics and M&A',
-                    lorem: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-                },
-                {
-                    icon: 'fa-solid fa-plane',
-                    title: 'Middle Marketing',
-                    lorem: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-                },
-                {
-                    icon: 'fa-solid fa-earth-americas',
-                    title: 'Legal Consulting',
-                    lorem: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-                },
-                {
-                    icon: 'fa-solid fa-inbox',
-                    title: 'Regulatory Risk',
-                    lorem: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-                }
-            ],
+            store,
             sectionHeader: {
                 darkMode: true,
                 name: 'our business areas',
@@ -66,7 +36,7 @@ export default {
 
                 <Button class="my-btn dark" :string="'see all'"></Button>
 
-                <div v-for="(infoCard, i) in businessInfos" class="col4 card">
+                <div v-for="(infoCard, i) in store.services" class="col4 card">
 
                     <div class="icons col12">
                         <font-awesome-icon class="icon" :icon="infoCard.icon" />
